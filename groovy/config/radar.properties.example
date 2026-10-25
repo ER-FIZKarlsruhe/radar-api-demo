@@ -1,0 +1,37 @@
+# Configuration for the Groovy examples.
+# Copy this file to "radar.properties" (same folder) and fill in your values.
+# "radar.properties" is git-ignored - never commit real credentials!
+#
+# Every key can also be set as an environment variable instead, which takes precedence:
+# RADAR_ + key in upper snake case, e.g. clientSecret -> RADAR_CLIENT_SECRET.
+# RADAR_CONFIG can point to a properties file in another location.
+
+# OAuth client (request one from info@radar-service.eu)
+clientId=<your-client-id>
+clientSecret=<your-client-secret>
+
+# RADAR user with a local password (Shibboleth users are NOT supported)
+contractAdminUserName=<your-username>
+contractAdminUserPassword=<your-password>
+
+# Optional: system admin, only used by token.getTokens("admin")
+adminUserName=
+adminUserPassword=
+
+# ID of your contract (16 characters, e.g. KorWAOmzdqLipAYd)
+contractId=<your-contract-id>
+
+# Target environment. contextUrl, ingestUrl and redirectUrl are derived from serverUrl
+# and only need to be set if they differ.
+serverUrl=https://test.radar-service.eu
+#contextUrl=https://test.radar-service.eu/radar
+#ingestUrl=https://test.radar-service.eu/radar-ingest
+#redirectUrl=https://test.radar-service.eu/radar/login/token
+
+# HTTP proxy (optional)
+proxy=
+proxyPort=
+nonProxyHosts=
+
+# Socket read timeout in milliseconds
+readTimeout=10000

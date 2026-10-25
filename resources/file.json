@@ -1,0 +1,41 @@
+{ 
+   "id":null,
+   "parentId":"null",
+   "createdDate":null,
+   "lastModifiedDate":null,
+   "fileName":null,
+   "binaryUrl":null,
+   "descriptiveMetadata":{ 
+      "identifier":null,
+      "alternateIdentifiers":null,
+      "relatedIdentifiers":null,
+      "creators":{ 
+         "creator":[ 
+            { 
+               "creatorName":"Max Mustermann"
+            },
+            { 
+               "creatorName":"Maike Maler"
+            }
+         ]
+      },
+      "contributors":null,
+      "title":"null",
+      "additionalTitles":null,
+      "descriptions":null,
+      "keywords":null,
+      "publishers":null,
+      "productionYear":null,
+      "publicationYear":null,
+      "language":null,
+      "subjectAreas":null,
+      "resource":null,
+      "geoLocations":null,
+      "dataSources":null,
+      "software":null,
+      "processing":null,
+      "rights":null,
+      "rightsHolders":null,
+      "relatedInformations":null
+   }
+}

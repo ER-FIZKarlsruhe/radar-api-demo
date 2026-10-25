@@ -1,0 +1,174 @@
+/*
+ * Copyright 2026 FIZ Karlsruhe - Leibniz-Institut fuer Informationsinfrastruktur GmbH
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ * Build for the Groovy examples, used by CI:
+ *
+ *   ./gradlew build                          compiles all scripts in common and the example_* folders
+ *   ./gradlew integrationTest --continue     runs the examples against a RADAR server
+ *
+ * The examples are plain scripts and still run without Gradle, see README.md.
+ */
+plugins {
+    id 'groovy'
+}
+
+repositories {
+    mavenCentral()
+}
+
+def groovyVersion = '5.1.3'
+
+dependencies {
+    implementation "org.apache.groovy:groovy:${groovyVersion}"
+    implementation "org.apache.groovy:groovy-json:${groovyVersion}"
+}
+
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['.']
+            include 'common/*.groovy', 'example_*/*.groovy'
+        }
+        java.srcDirs = []
+        resources.srcDirs = []
+    }
+}
+
+/*
+ * Examples run by integrationTest. They need the configuration from config/radar.properties or the RADAR_*
+ * environment variables. Not included:
+ *   ingestHierarchyDisciplineSpecificMetadata  needs the PNG 7 schema in the contract
+ *   publishDataset                              keeps its workspace
+ *   correctDataset                              needs the id of a published dataset
+ *   stresstest                                  load test
+ * Use a contract meant for tests:
+ *   setStates archives a dataset, which cannot be deleted again
+ *   createDatasetWebdav keeps its workspace
+ *   setRights needs a user named "user" on the server
+ */
+def integrationExamples = [
+        'example_crudWorkspace/crudWorkspace.groovy',
+        'example_crudSchema/crudSchema.groovy',
+        'example_createDatasetHierarchy/createDatasetHierarchy.groovy',
+        'example_createDatasetWebdav/createDatasetWebdav.groovy',
+        'example_createDatasetHierarchy/createDatasetHierarchyWithXmlMetadata.groovy',
+        'example_ingestHierarchy/ingestHierarchy.groovy',
+        'example_browseHierarchy/browseHierarchy.groovy',
+        'example_validateMetadata/validateMetadata.groovy',
+        'example_facets/search.groovy',
+        'example_facets/facets.groovy',
+        'example_setStates/setStates.groovy',
+        'example_setRights/setRights.groovy'
+]
+
+def integrationTest = tasks.register('integrationTest') {
+    group = 'verification'
+    description = 'Runs the examples against the configured RADAR server'
+}
+
+// Each example writes a JUnit XML report here, so CI servers like Bamboo can show the result per example
+def reportDir = layout.buildDirectory.dir('test-results/integrationTest')
+
+integrationExamples.each { path ->
+    def script = file(path)
+    def exampleName = script.name - '.groovy'
+    def runExample = tasks.register("run${exampleName.capitalize()}", JavaExec) {
+        group = 'examples'
+        description = "Runs ${path}"
+        // only the Groovy runtime: the scripts load the helpers from ../common themselves, like `groovy <script>`
+        classpath = configurations.runtimeClasspath
+        mainClass = 'groovy.ui.GroovyMain'
+        args script.name
+        workingDir = script.parentFile
+        mustRunAfter tasks.named('compileGroovy')
+        // the exit code is checked in doLast, after the report has been written
+        ignoreExitValue = true
+        outputs.upToDateWhen { false }
+
+        def output = new ByteArrayOutputStream()
+        def reportFile = reportDir.map { it.file("TEST-${exampleName}.xml") }
+        long startTime = 0
+        doFirst {
+            reportFile.get().asFile.delete()
+            standardOutput = new TeeOutputStream(System.out, output)
+            errorOutput = new TeeOutputStream(System.err, output)
+            startTime = System.currentTimeMillis()
+        }
+        doLast {
+            int exitValue = executionResult.get().exitValue
+            String log = output.toString('UTF-8')
+            writeJUnitReport(reportFile.get().asFile, exampleName, exitValue, log, (System.currentTimeMillis() - startTime) / 1000)
+            if (exitValue != 0) {
+                throw new GradleException("${path} failed with exit code ${exitValue}")
+            }
+        }
+    }
+    integrationTest.configure { dependsOn runExample }
+}
+
+/** Copies everything written to it to two streams: the console and the buffer for the report. */
+class TeeOutputStream extends OutputStream {
+    private final OutputStream first
+    private final OutputStream second
+
+    TeeOutputStream(OutputStream first, OutputStream second) {
+        this.first = first
+        this.second = second
+    }
+
+    @Override
+    void write(int b) {
+        first.write(b)
+        second.write(b)
+    }
+
+    @Override
+    void write(byte[] b, int off, int len) {
+        first.write(b, off, len)
+        second.write(b, off, len)
+    }
+
+    @Override
+    void flush() {
+        first.flush()
+        second.flush()
+    }
+}
+
+/** Writes one example as a JUnit test suite with a single test case, the format CI servers understand. */
+static void writeJUnitReport(File file, String exampleName, int exitValue, String log, BigDecimal seconds) {
+    // characters that are not allowed in XML 1.0, e.g. terminal control characters
+    String cleanLog = log.replaceAll('[^\\x09\\x0A\\x0D\\x20-\\uD7FF\\uE000-\\uFFFD]', '')
+    // the Groovy runtime reports an uncaught exception as "Caught: <exception>"
+    String failureMessage = cleanLog.readLines().find { it.startsWith('Caught: ') }?.substring(8) ?: "exit code ${exitValue}"
+    String time = seconds.setScale(3, java.math.RoundingMode.HALF_UP).toPlainString()
+
+    file.parentFile.mkdirs()
+    file.withWriter('UTF-8') { writer ->
+        def xml = new groovy.xml.MarkupBuilder(writer)
+        writer << '<?xml version="1.0" encoding="UTF-8"?>\n'
+        xml.testsuite(name: "integrationTest.${exampleName}", tests: 1, failures: exitValue == 0 ? 0 : 1, errors: 0,
+                skipped: 0, time: time, timestamp: new Date().format("yyyy-MM-dd'T'HH:mm:ss")) {
+            testcase(classname: 'integrationTest', name: exampleName, time: time) {
+                if (exitValue != 0) {
+                    failure(message: failureMessage, type: 'ExampleFailed', cleanLog.readLines().takeRight(30).join('\n'))
+                }
+            }
+            'system-out' { mkp.yieldUnescaped("<![CDATA[${cleanLog.replace(']]>', ']]]]><![CDATA[>')}]]>") }
+        }
+    }
+}

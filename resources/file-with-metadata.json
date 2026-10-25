@@ -1,0 +1,98 @@
+{ 
+   "parentId":"null",
+   "fileName":null,
+   "binaryUrl":null, 
+   
+   "descriptiveMetadata":{ 
+    "alternateIdentifiers": null,
+    "relatedIdentifiers": null,
+    "creators": {
+      "creator": [
+        {
+          "givenName": "Alice",
+          "familyName": "Tree",
+          "creatorName": "Tree, Alice",
+          "nameIdentifier": [
+            {
+              "schemeURI": "https://orcid.org/",
+              "nameIdentifierScheme": "ORCID",
+              "value": "0000-0003-1234-5678"
+            }
+          ]
+        },
+        {
+          "givenName": "Alice",
+          "familyName": "Parks",
+          "creatorName": "Parks, Alice",
+          "nameIdentifier": [
+            {
+              "schemeURI": "https://orcid.org/",
+              "nameIdentifierScheme": "ORCID",
+              "value": "0000-0003-1234-5678"
+            }
+          ],
+          "creatorAffiliation": {
+            "schemeURI": "https://ror.org/",
+            "affiliationIdentifierScheme": "ROR",
+            "affiliationIdentifier": "https://ror.org/03s3xs393",
+            "value": "RWTH Aachen University"
+          }
+        }
+      ]
+    },
+    "contributors": {
+      "contributor": [
+        {
+          "givenName": "Catherine",
+          "familyName": "Gonzalez",
+          "contributorName": "Gonzalez, Catherine"
+        }
+      ]
+    },
+    "title": "2020-Scrum-Guide-US.pdf",
+    "additionalTitles": null,
+    "descriptions": null,
+    "keywords": {
+      "keyword": [
+        { "keywordScheme": "OTHER", "value": "rdm" },
+        { "keywordScheme": "OTHER", "value": "test" }
+      ]
+    },
+    "publishers": null,
+    "productionYear": null,
+    "publicationYear": null,
+    "language": "ENG",
+    "subjectAreas": null,
+    "resource": { "resourceType": "COLLECTION" },
+    "geoLocations": {
+      "geoLocation": [
+        {
+          "geoLocationCountry": "GERMANY",
+          "geoLocationRegion": "Aachen",
+          "geoLocationPoint": {
+            "latitude": "150.775555",
+            "longitude": "6.0836111"
+          }
+        }
+      ]
+    },
+    "dataSources": {
+      "dataSource": [{ "dataSourceDetail": "ORGANISM", "value": "our heads" }]
+    },
+    "software": {
+      "softwareType": [
+        {
+          "softwareName": [{ "softwareVersion": "1.0", "value": "coscine" }],
+          "alternativeSoftwareName": [
+            { "alternativeSoftwareVersion": "1.2", "value": "notCoscine" }
+          ],
+          "type": "OTHER"
+        }
+      ]
+    },
+    "processing": { "dataProcessing": ["thinking about it"] },
+    "rights": { "controlledRights": "MIT_LICENSE" },
+    "rightsHolders": null,
+    "relatedInformations": null
+  }
+}

@@ -1,0 +1,18 @@
+/bugsearch/
+/.gradle/
+/.settings/
+/.project
+/.idea/
+/lib/
+radar-api-demo.iml
+
+# Python demo
+/python/.env
+/python/.ipynb_checkpoints/
+/python/__pycache__/
+/python/sample_data/*.tar.gz
+
+# Groovy examples
+/groovy/config/radar.properties
+/groovy/.gradle/
+/groovy/build/

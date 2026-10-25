@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+Copyright 2018 FIZ Karlsruhe - Leibniz-Institut fuer Informationsinfrastruktur GmbH
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<ns3:radarDataset xmlns:ns2="http://radar-service.eu/schemas/descriptive/radar/v09/radar-elements" xmlns:ns3="http://radar-service.eu/schemas/descriptive/radar/v09/radar-dataset">
+    <ns2:identifier identifierType="DOI">10.123111/gcb.13sw2004</ns2:identifier>
+    <ns2:alternateIdentifiers>
+        <ns2:alternateIdentifier alternateIdentifierType="BiBaBU">2342345435</ns2:alternateIdentifier>
+        <ns2:alternateIdentifier alternateIdentifierType="UJHGFDS">645654654</ns2:alternateIdentifier>
+    </ns2:alternateIdentifiers>
+    <ns2:relatedIdentifiers>
+        <ns2:relatedIdentifier relatedIdentifierType="bibcode" relationType="Cites">Bibibibib</ns2:relatedIdentifier>
+        <ns2:relatedIdentifier relatedIdentifierType="URL" relationType="IsCompiledBy">ENENENENEEEAAAANNN</ns2:relatedIdentifier>
+    </ns2:relatedIdentifiers>
+    <ns2:creators>
+        <ns2:creator>
+            <ns2:creatorName>Max Mustermann</ns2:creatorName>
+            <ns2:creatorAffiliation>Scientist</ns2:creatorAffiliation>
+        </ns2:creator>
+        <ns2:creator>
+            <ns2:creatorName>Maike Maler</ns2:creatorName>
+            <ns2:creatorAffiliation>Scientist</ns2:creatorAffiliation>
+        </ns2:creator>
+    </ns2:creators>
+    <ns2:title>Global ecological impacts gorilla aliens.</ns2:title>
+    <ns2:additionalTitles>
+        <ns2:additionalTitle additionalTitleType="AlternativeTitle">biological invasions</ns2:additionalTitle>
+        <ns2:additionalTitle additionalTitleType="AlternativeTitle">gorilla effects</ns2:additionalTitle>
+    </ns2:additionalTitles>
+    <ns2:descriptions>
+        <ns2:description descriptionType="Abstract">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame</ns2:description>
+        <ns2:description descriptionType="Method">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,amet.</ns2:description>
+    </ns2:descriptions>
+    <ns2:keywords>
+        <ns2:keyword>gorilla</ns2:keyword>
+        <ns2:keyword>alien</ns2:keyword>
+    </ns2:keywords>
+    <ns2:publishers>
+        <ns2:publisher>Lorem Ipsums Online Library</ns2:publisher>
+    </ns2:publishers>
+    <ns2:productionYear>2014</ns2:productionYear>
+    <ns2:publicationYear>2015</ns2:publicationYear>
+    <ns2:language>eng</ns2:language>
+    <ns2:subjectAreas>
+        <ns2:subjectArea>
+            <ns2:controlledSubjectAreaName>Biology</ns2:controlledSubjectAreaName>
+            <ns2:additionalSubjectAreaName>Zebrafish</ns2:additionalSubjectAreaName>
+        </ns2:subjectArea>
+    </ns2:subjectAreas>
+    <ns2:resource resourceType="Text">HPC</ns2:resource>
+    <ns2:geoLocations>
+        <ns2:geoLocation>
+            <ns2:geoLocationCountry>ANDORRA</ns2:geoLocationCountry>
+            <ns2:geoLocationBox>
+                <ns2:southWestPoint>
+                    <ns2:latitude>29.612</ns2:latitude>
+                    <ns2:longitude>54.668</ns2:longitude>
+                </ns2:southWestPoint>
+                <ns2:northEastPoint>
+                    <ns2:latitude>38.290</ns2:latitude>
+                    <ns2:longitude>80.728</ns2:longitude>
+                </ns2:northEastPoint>
+            </ns2:geoLocationBox>
+        </ns2:geoLocation>
+        <ns2:geoLocation>
+            <ns2:geoLocationRegion>Mittelpunkt EU</ns2:geoLocationRegion>
+            <ns2:geoLocationPoint>
+                <ns2:latitude>50.11360</ns2:latitude>
+                <ns2:longitude>9.25087</ns2:longitude>
+            </ns2:geoLocationPoint>
+        </ns2:geoLocation>
+    </ns2:geoLocations>
+    <ns2:dataSources>
+        <ns2:dataSource dataSourceDetail="Instrument">asdcx</ns2:dataSource>
+    </ns2:dataSources>
+    <ns2:software>
+        <ns2:softwareType type="Resource Processing">
+            <ns2:softwareName softwareVersion="2c">Oracle Database Server</ns2:softwareName>
+            <ns2:alternativeSoftwareName alternativeSoftwareVersion="3.0.4">MongoDB</ns2:alternativeSoftwareName>
+            <ns2:alternativeSoftwareName alternativeSoftwareVersion="5.6.25">MySQL</ns2:alternativeSoftwareName>
+        </ns2:softwareType>
+    </ns2:software>
+    <ns2:processing>
+        <ns2:dataProcessing>Validation</ns2:dataProcessing>
+        <ns2:dataProcessing>Aggregation</ns2:dataProcessing>
+    </ns2:processing>
+    <ns2:rights>
+        <ns2:controlledRights>CC BY-NC 4.0 Attribution-NonCommercial</ns2:controlledRights>
+    </ns2:rights>
+    <ns2:rightsHolders>
+        <ns2:rightsHolder>Lorem Ipsums Online Library</ns2:rightsHolder>
+    </ns2:rightsHolders>
+    <ns2:relatedInformations>
+        <ns2:relatedInformation relatedInformationType="BisiType">Biiiiiiiiiiiisssssssiiiiiii</ns2:relatedInformation>
+    </ns2:relatedInformations>
+</ns3:radarDataset>

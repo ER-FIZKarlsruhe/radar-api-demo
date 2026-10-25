@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+Copyright 2018 FIZ Karlsruhe - Leibniz-Institut fuer Informationsinfrastruktur GmbH
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<ns3:radarDataset xmlns:ns2="http://radar-service.eu/schemas/descriptive/radar/v09/radar-elements" xmlns:ns3="http://radar-service.eu/schemas/descriptive/radar/v09/radar-dataset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://radar-service.eu/schemas/descriptive/radar/v09/radar-dataset https://www.radar-service.eu/schemas/descriptive/radar/v9.2/RadarDataset.xsd http://radar-service.eu/schemas/descriptive/radar/v09/radar-elements https://www.radar-service.eu/schemas/descriptive/radar/v9.2/RadarElements.xsd">
+    <ns2:identifier identifierType="DOI">10.1111/gcb.13004</ns2:identifier>
+    <ns2:alternateIdentifiers>
+        <ns2:alternateIdentifier alternateIdentifierType="BiBaBU">2342345435</ns2:alternateIdentifier>
+        <ns2:alternateIdentifier alternateIdentifierType="UJHGFDS">645654654</ns2:alternateIdentifier>
+    </ns2:alternateIdentifiers>
+    <ns2:relatedIdentifiers>
+        <ns2:relatedIdentifier relatedIdentifierType="bibcode" relationType="Cites">Bibibibib</ns2:relatedIdentifier>
+        <ns2:relatedIdentifier relatedIdentifierType="URL" relationType="IsCompiledBy">ENENENENEEEAAAANNN</ns2:relatedIdentifier>
+    </ns2:relatedIdentifiers>
+    <ns2:creators>
+        <ns2:creator>
+            <ns2:creatorName>Dampf, Hans</ns2:creatorName>
+            <ns2:givenName>Hans</ns2:givenName>
+            <ns2:familyName>Dampf</ns2:familyName>
+            <ns2:nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">2220-0021-5000-0004</ns2:nameIdentifier>
+            <ns2:creatorAffiliation>DataCite</ns2:creatorAffiliation>
+        </ns2:creator>
+        <ns2:creator>
+            <ns2:creatorName>Maler, Maike</ns2:creatorName>
+            <ns2:creatorAffiliation schemeURI="https://ror.org/" affiliationIdentifierScheme="ROR" affiliationIdentifier="https://ror.org/0387prb75">Institutionelle Zugehörigkeit (nur für Personen)</ns2:creatorAffiliation>
+        </ns2:creator>
+    </ns2:creators>
+    <ns2:contributors>
+        <ns2:contributor contributorType="ContactPerson">
+          <ns2:contributorName>Dampf, Hans</ns2:contributorName>
+          <ns2:givenName>Hans</ns2:givenName>
+          <ns2:familyName>Dampf</ns2:familyName>
+          <ns2:nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">2220-0021-5000-0004</ns2:nameIdentifier>
+          <ns2:contributorAffiliation>DataCite</ns2:contributorAffiliation>
+        </ns2:contributor>
+        <ns2:contributor contributorType="DataCurator">
+          <ns2:contributorName>Mustermann, Peter</ns2:contributorName>
+          <ns2:contributorAffiliation  schemeURI="https://ror.org/" affiliationIdentifierScheme="ROR" affiliationIdentifier="https://ror.org/0387prb75">Institutionelle Zugehörigkeit (nur für Personen)</ns2:contributorAffiliation>
+        </ns2:contributor>
+    </ns2:contributors>
+    <ns2:title>@@TITLE@@</ns2:title>
+    <ns2:additionalTitles>
+        <ns2:additionalTitle additionalTitleType="AlternativeTitle">biological invasions</ns2:additionalTitle>
+        <ns2:additionalTitle additionalTitleType="AlternativeTitle">gorilla effects</ns2:additionalTitle>
+    </ns2:additionalTitles>
+    <ns2:descriptions>
+        <ns2:description descriptionType="Abstract">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame</ns2:description>
+        <ns2:description descriptionType="Method">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,amet.</ns2:description>
+    </ns2:descriptions>
+    <ns2:keywords>
+        <ns2:keyword>gorilla</ns2:keyword>
+        <ns2:keyword>alien</ns2:keyword>
+        <ns2:keyword keywordScheme="GND" schemeURI="https://d-nb.info/gnd/" valueURI="https://d-nb.info/gnd/1098579690" classificationCode="1098579690">Schlagworte zur weiteren Charakerisierung des Objekts. Für eine optimale Such- und Auffindbarkeit der Daten empfiehlt RADAR, eindeutige Begriffe auf Englisch als Schlagworte zu verwenden - diese sollten sich von den Beschreibungen im Titel bzw. Untertitel unterscheiden.</ns2:keyword>
+    </ns2:keywords>
+    <ns2:publishers>
+        <ns2:publisher>Lorem Ipsums Online Library</ns2:publisher>
+        <ns2:publisher schemeURI="https://ror.org/" nameIdentifierScheme="ROR" nameIdentifier="https://ror.org/0387prb75">Personen oder Organisationen, die dafür verantwortlich sind, dass Daten in der gegebenen Form bei RADAR archiviert oder publiziert werden</ns2:publisher>
+        <ns2:publisher schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID" nameIdentifier="2220-0021-5000-0004">Personen oder Organisationen, die dafür verantwortlich sind, dass Daten in der gegebenen Form bei RADAR archiviert oder publiziert werden</ns2:publisher>
+        
+    </ns2:publishers>
+    <ns2:productionYear>2014</ns2:productionYear>
+    <ns2:publicationYear>2015</ns2:publicationYear>
+    <ns2:language>eng</ns2:language>
+    <ns2:subjectAreas>
+        <ns2:subjectArea>
+            <ns2:controlledSubjectAreaName>Biology</ns2:controlledSubjectAreaName>
+            <ns2:additionalSubjectAreaName>Zebrafish</ns2:additionalSubjectAreaName>
+        </ns2:subjectArea>
+        <ns2:subjectArea>
+            <ns2:controlledSubjectAreaName>Other</ns2:controlledSubjectAreaName>
+            <ns2:additionalSubjectAreaName>Cooking</ns2:additionalSubjectAreaName>
+        </ns2:subjectArea>
+        <ns2:subjectArea>
+            <ns2:controlledSubjectAreaName>Other</ns2:controlledSubjectAreaName>
+            <ns2:additionalSubjectAreaName>Eating</ns2:additionalSubjectAreaName>
+        </ns2:subjectArea>
+        <ns2:subjectArea>
+            <ns2:controlledSubjectAreaName>Other</ns2:controlledSubjectAreaName>
+            <ns2:additionalSubjectAreaName>Generic Stuff</ns2:additionalSubjectAreaName>
+        </ns2:subjectArea>
+    </ns2:subjectAreas>
+    <ns2:resource resourceType="Text">HPC</ns2:resource>
+    <ns2:geoLocations>
+        <ns2:geoLocation>
+            <ns2:geoLocationCountry>ANDORRA</ns2:geoLocationCountry>
+            <ns2:geoLocationBox>
+                <ns2:southWestPoint>
+                    <ns2:latitude>29.612</ns2:latitude>
+                    <ns2:longitude>54.668</ns2:longitude>
+                </ns2:southWestPoint>
+                <ns2:northEastPoint>
+                    <ns2:latitude>38.290</ns2:latitude>
+                    <ns2:longitude>80.728</ns2:longitude>
+                </ns2:northEastPoint>
+            </ns2:geoLocationBox>
+        </ns2:geoLocation>
+        <ns2:geoLocation>
+            <ns2:geoLocationRegion>Mittelpunkt EU</ns2:geoLocationRegion>
+            <ns2:geoLocationPoint>
+                <ns2:latitude>50.11360</ns2:latitude>
+                <ns2:longitude>9.25087</ns2:longitude>
+            </ns2:geoLocationPoint>
+        </ns2:geoLocation>
+    </ns2:geoLocations>
+    <ns2:dataSources>
+        <ns2:dataSource dataSourceDetail="Instrument">asdcx</ns2:dataSource>
+    </ns2:dataSources>
+    <ns2:software>
+        <ns2:softwareType type="Resource Processing">
+            <ns2:softwareName softwareVersion="2c">Oracle Database Server</ns2:softwareName>
+            <ns2:alternativeSoftwareName alternativeSoftwareVersion="3.0.4">MongoDB</ns2:alternativeSoftwareName>
+            <ns2:alternativeSoftwareName alternativeSoftwareVersion="5.6.25">MySQL</ns2:alternativeSoftwareName>
+        </ns2:softwareType>
+    </ns2:software>
+    <ns2:processing>
+        <ns2:dataProcessing>Validation</ns2:dataProcessing>
+        <ns2:dataProcessing>Aggregation</ns2:dataProcessing>
+    </ns2:processing>
+    <ns2:rights>
+        <ns2:controlledRights>CC BY-NC 4.0 Attribution-NonCommercial</ns2:controlledRights>
+    </ns2:rights>
+    <ns2:rightsHolders>
+        <ns2:rightsHolder>Lorem Ipsums Online Library</ns2:rightsHolder>
+        <ns2:rightsHolder schemeURI="https://ror.org/" nameIdentifierScheme="ROR" nameIdentifier="https://ror.org/0387prb75">Name eines Unternehmens/einer Institution oder Personennamen. Nachname, Vorname oder Name einer Institution.</ns2:rightsHolder>
+        <ns2:rightsHolder schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID" nameIdentifier="2220-0021-5000-0004">Name eines Unternehmens/einer Institution oder Personennamen. Nachname, Vorname oder Name einer Institution.</ns2:rightsHolder>
+
+    </ns2:rightsHolders>
+    <ns2:relatedInformations>
+        <ns2:relatedInformation relatedInformationType="BisiType">Biiiiiiiiiiiisssssssiiiiiii</ns2:relatedInformation>
+    </ns2:relatedInformations>
+    
+    <ns2:fundingReferences>
+      <ns2:fundingReference>
+        <ns2:funderName>DFG</ns2:funderName>
+        <ns2:funderIdentifier type="CrossRefFunder">http://dx.doi.org/10.13039/501100001659</ns2:funderIdentifier>
+        <ns2:awardNumber>BE 1042/7-1</ns2:awardNumber>
+        <ns2:awardURI>http://gepris.dfg.de/gepris/projekt/237143194</ns2:awardURI>
+        <ns2:awardTitle>RADAR Research Data Repositorium</ns2:awardTitle>
+      </ns2:fundingReference>
+      <ns2:fundingReference>
+        <ns2:funderName>Test</ns2:funderName>
+        <ns2:funderIdentifier type="ISNI">033000012150090X</ns2:funderIdentifier>
+        <ns2:awardNumber>BE 1042/7-1</ns2:awardNumber>
+        <ns2:awardURI>http://gepris.dfg.de/gepris/projekt/237143194</ns2:awardURI>
+        <ns2:awardTitle>RADAR Research Data Repositorium</ns2:awardTitle>
+      </ns2:fundingReference>
+      <ns2:fundingReference>
+        <ns2:funderName>DFG</ns2:funderName>
+        <ns2:funderIdentifier type="CrossRefFunder" schemeURI="https://www.crossref.org/services/funder-registry/">http://dx.doi.org/10.13039/501100001659</ns2:funderIdentifier>
+        <ns2:awardNumber>BE 1042/7-1</ns2:awardNumber>
+        <ns2:awardURI>http://gepris.dfg.de/gepris/projekt/237143194</ns2:awardURI>
+        <ns2:awardTitle>RADAR Research Data Repositorium</ns2:awardTitle>
+      </ns2:fundingReference>
+    </ns2:fundingReferences>
+</ns3:radarDataset>

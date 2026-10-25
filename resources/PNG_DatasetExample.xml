@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Copyright 2025 FIZ Karlsruhe - Leibniz-Institut fuer Informationsinfrastruktur GmbH
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<png xmlns="http://radar-service.eu/schemas/3DMM2O/png_beispiel">
+   <radar:radarDataset xmlns="http://radar-service.eu/schemas/descriptive/radar/v09/radar-elements" xmlns:radar="http://radar-service.eu/schemas/descriptive/radar/v09/radar-dataset">
+        <creators>
+            <creator>
+                <creatorName>Bob</creatorName>
+                <givenName>Bob</givenName>
+                <familyName>ABC</familyName>
+                <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0003-1234-5678</nameIdentifier>
+                <creatorAffiliation>Company</creatorAffiliation>
+            </creator>
+        </creators>
+        <title>Test1</title>
+        <publishers>
+            <publisher>Company</publisher>
+        </publishers>
+        <productionYear>2010</productionYear>
+        <subjectAreas>
+            <subjectArea>
+                <controlledSubjectAreaName>Information Technology</controlledSubjectAreaName>
+            </subjectArea>
+        </subjectAreas>
+        <resource resourceType="Image"></resource>
+        <rights>
+            <controlledRights>All rights reserved</controlledRights>
+        </rights>
+        <rightsHolders>
+            <rightsHolder>Company</rightsHolder>
+        </rightsHolders>
+    </radar:radarDataset>
+    
+    <header>
+            <Width>123</Width>
+            <Height>123</Height>
+            <BitDepth>8</BitDepth>
+            <ColourType>2</ColourType>
+            <FilterMethod>0</FilterMethod>
+            <InterlaceMethod>0</InterlaceMethod>
+    </header>
+    <info>
+            <Title>2342.png</Title>
+            <Author>Mikroskop XYZ</Author>
+            <Description>Ein Bild aus dem Mikroskop</Description>
+            <CreationTime></CreationTime>
+            <Software>Gimp</Software>
+            <Disclaimer>Legal disclaimer</Disclaimer>
+            <Warning>Warning of nature of content</Warning>
+            <Comment>Miscellaneous comment</Comment>
+    </info>
+</png>

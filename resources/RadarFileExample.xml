@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+Copyright 2018 FIZ Karlsruhe - Leibniz-Institut fuer Informationsinfrastruktur GmbH
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<ns3:radarFile xmlns:ns2="http://radar-service.eu/schemas/descriptive/radar/v09/radar-elements" xmlns:ns3="http://radar-service.eu/schemas/descriptive/radar/v09/radar-file">
+    <ns2:alternateIdentifiers>
+        <ns2:alternateIdentifier alternateIdentifierType="DIN">ISO 8601</ns2:alternateIdentifier>
+        <ns2:alternateIdentifier alternateIdentifierType="CAGE Code">DE</ns2:alternateIdentifier>
+    </ns2:alternateIdentifiers>
+    <ns2:relatedIdentifiers>
+        <ns2:relatedIdentifier relatedIdentifierType="bibcode" relationType="Cites">1974AJ.....72..817H</ns2:relatedIdentifier>
+        <ns2:relatedIdentifier relatedIdentifierType="URL" relationType="IsCompiledBy">www.radar-projekt.org</ns2:relatedIdentifier>
+    </ns2:relatedIdentifiers>
+    <ns2:creators>
+        <ns2:creator>
+            <ns2:creatorName>Max Mustermann</ns2:creatorName>
+            <ns2:creatorAffiliation>Scientist</ns2:creatorAffiliation>
+        </ns2:creator>
+        <ns2:creator>
+            <ns2:creatorName>Maike Maler</ns2:creatorName>
+            <ns2:creatorAffiliation>Scientist</ns2:creatorAffiliation>
+        </ns2:creator>
+    </ns2:creators>
+    <ns2:contributors>
+        <ns2:contributor contributorType="ContactPerson">Alfred E Neumann</ns2:contributor>
+        <ns2:contributor contributorType="DataCurator">Peter Mustermann</ns2:contributor>
+    </ns2:contributors>
+    <ns2:title>Research Data Repositorium</ns2:title>
+    <ns2:additionalTitles>
+        <ns2:additionalTitle additionalTitleType="AlternativeTitle">Search, browse and retrieve data from our repository.</ns2:additionalTitle>
+        <ns2:additionalTitle additionalTitleType="AlternativeTitle">A digital data repository for the research community</ns2:additionalTitle>
+    </ns2:additionalTitles>
+    <ns2:descriptions>
+        <ns2:description descriptionType="Method">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,amet.</ns2:description>
+    </ns2:descriptions>
+    <ns2:keywords>
+        <ns2:keyword>Publikation</ns2:keyword>
+        <ns2:keyword>Archivierung</ns2:keyword>
+        <ns2:keyword>Forschungsdaten</ns2:keyword>
+    </ns2:keywords>
+    <ns2:productionYear>2015</ns2:productionYear>
+    <ns2:language>eng</ns2:language>
+    <ns2:subjectAreas>
+        <ns2:subjectArea>
+            <ns2:controlledSubjectAreaName>Software Technology</ns2:controlledSubjectAreaName>
+        </ns2:subjectArea>
+        <ns2:subjectArea>
+            <ns2:controlledSubjectAreaName>Other</ns2:controlledSubjectAreaName>
+            <ns2:additionalSubjectAreaName>Archivwesen</ns2:additionalSubjectAreaName>
+        </ns2:subjectArea>
+    </ns2:subjectAreas>
+    <ns2:resource resourceType="Software">Repository</ns2:resource>
+    <ns2:geoLocations>
+      <ns2:geoLocation>
+        <ns2:geoLocationCountry>HAITI</ns2:geoLocationCountry>
+        <ns2:geoLocationRegion>Karlsruhe</ns2:geoLocationRegion>
+        <ns2:geoLocationPoint>
+            <ns2:latitude>49.0001</ns2:latitude>
+            <ns2:longitude>8.3500</ns2:longitude>
+        </ns2:geoLocationPoint>
+      </ns2:geoLocation>
+    </ns2:geoLocations>
+    <ns2:dataSources>
+        <ns2:dataSource dataSourceDetail="Instrument">Science</ns2:dataSource>
+    </ns2:dataSources>
+    <ns2:software>
+        <ns2:softwareType type="Resource Processing">
+            <ns2:softwareName softwareVersion="2c">Free Database Server</ns2:softwareName>
+            <ns2:alternativeSoftwareName alternativeSoftwareVersion="3.0.4">Example-Database</ns2:alternativeSoftwareName>
+            <ns2:alternativeSoftwareName alternativeSoftwareVersion="5.6.25">NoSQL-Database</ns2:alternativeSoftwareName>
+        </ns2:softwareType>
+    </ns2:software>
+    <ns2:processing>
+        <ns2:dataProcessing>Validation</ns2:dataProcessing>
+        <ns2:dataProcessing>Aggregation</ns2:dataProcessing>
+    </ns2:processing>
+    <ns2:relatedInformations>
+        <ns2:relatedInformation relatedInformationType="ExampleType">OAIS (Open Archival Information System)</ns2:relatedInformation>
+    </ns2:relatedInformations>
+</ns3:radarFile>

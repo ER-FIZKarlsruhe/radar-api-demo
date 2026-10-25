@@ -1,0 +1,15 @@
+{ 
+   "id":null,
+   "parentId":"null",
+   "descriptiveMetadata":{ 
+      "title":"null",
+      "description":"to be used only by Alice and Bob"
+   },
+   "technicalMetadata":{ 
+      "defaultDatasetRetentionPeriod":10,
+      "defaultDatasetResponsibleEmail":"alice_and_bob@foo.bar",
+      "diskQuota":1000000000,
+      "archiveQuota":1000000000,
+      "publicationQuota":1000000000
+   }
+}
